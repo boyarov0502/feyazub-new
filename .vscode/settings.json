@@ -1,8 +1,8 @@
 {
   "liveSassCompile.settings.includeItems": [
-      // "libs/sass/lib.sass"
-      "libs/sass/lib-therapy.sass"
-      // "libs/sass/lib-osteopathy.sass"
+      "sass/cosmetology/lib-cosmetology.sass"
+      // "sass/osteopathy/lib-osteopathy.sass"
+      // "sass/therapy/lib-therapy.sass"
   ],
   "liveSassCompile.settings.formats":[
       {
