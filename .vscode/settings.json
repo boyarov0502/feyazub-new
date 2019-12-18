@@ -1,0 +1,15 @@
+{
+  "liveSassCompile.settings.includeItems": [
+      // "libs/sass/lib.sass"
+      "libs/sass/lib-therapy.sass"
+      // "libs/sass/lib-osteopathy.sass"
+  ],
+  "liveSassCompile.settings.formats":[
+      {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "/css"
+      }
+  ],
+  "liveSassCompile.settings.generateMap": false
+}

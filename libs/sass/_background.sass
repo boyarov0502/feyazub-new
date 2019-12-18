@@ -1,0 +1,58 @@
+.wave
+	overflow: hidden
+
+.wave-top
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: -6px
+		width: 105%
+		height: 4.5rem
+		background-image: url('/images/wave_white.svg')
+		background-size: 105%
+		background-repeat: no-repeat
+		background-position: bottom
+		transform: rotate(180deg)
+		z-index: 1
+
+.wave-bottom
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		bottom: -5px
+		width: 105%
+		height: 4.5rem
+		background-image: url('/images/wave_white.svg')
+		background-size: 105%
+		background-repeat: no-repeat
+		background-position: center bottom
+		z-index: 1
+	&_pink
+		&:after
+			background-image: url('/images/wave_pink.svg')
+
+@media screen and ( max-width: 1024px )
+	.wave-top
+		&:before
+			top: -2px
+
+	.wave-bottom
+		&:after
+			bottom: -2px
+
+@media screen and ( min-width: 1920px )
+	.wave-top
+		&:before
+			height: 72px
+			background-size: 1920px 71px
+			background-repeat: repeat-x
+
+	.wave-bottom
+		&:after
+			height: 72px
+			background-size: 1920px 71px
+			background-repeat: repeat-x

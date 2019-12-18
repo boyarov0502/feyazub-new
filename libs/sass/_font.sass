@@ -1,0 +1,235 @@
+@font-face
+	font-family: 'Hatter'
+	src: url("/fonts/hatter/HatterDisplayPro-Regular.otf") format("opentype")
+	font-weight: normal
+	font-style: normal
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Comfortaa:400,700|Yanone+Kaffeesatz:400,700|Roboto:300&display=swap&subset=cyrillic')
+
+
+@mixin Hatter()
+	font-family: 'Hatter'
+
+@mixin Yanone()
+	font-family: 'Yanone Kaffeesatz', sans-serif
+
+@mixin Amatic()
+	font-family: 'Amatic SC', cursive
+
+@mixin Comfortaa()
+	font-family: 'Comfortaa', cursive
+
+@mixin Roboto()
+	font-family: 'Roboto', sans-serif
+
+
+.h1
+	+Hatter
+	font-size: 6em
+	font-weight: 400
+	line-height: 100%
+
+.h2
+	+Hatter
+	font-size: 4em
+	font-weight: 400
+	line-height: 120%
+
+.h3
+	+Hatter
+	font-size: 2.5em
+	font-weight: 400
+	line-height: 120%
+
+.h4
+	+Hatter
+	font-size: 2em
+	font-weight: 400
+	line-height: 120%
+
+.h5
+	+Hatter
+	font-size: 1.5em
+	font-weight: 400
+	line-height: 120%
+
+.h6
+	+Hatter
+	font-size: 1.25em
+	font-weight: 400
+	line-height: 120%
+	letter-spacing: 0.05em
+
+.body-l
+	+Yanone
+	font-size: 1.25em
+	font-weight: 400
+	letter-spacing: 0.05em
+
+.body-m
+	+Yanone
+	font-size: 1em
+	font-weight: 400
+
+.body-m_i
+	+Amatic
+	font-size: 1em
+	font-style: normal
+	font-weight: 700
+
+.body-s
+	+Yanone
+	font-size: 0.9em
+	font-weight: 400
+
+.body-s_i
+	+Amatic
+	font-size: 0.9em
+	font-style: normal
+	font-weight: 700
+
+.subtitle
+	+Hatter
+	font-size: 0.9em
+	font-weight: 400
+	line-height: 120%
+
+.caption
+	+Comfortaa
+	font-size: 0.6em
+	font-weight: 400
+
+.overline
+	+Comfortaa
+	font-size: 0.65em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+
+.button-l
+	+Yanone
+	font-size: 1em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+
+.button-m
+	+Yanone
+	font-size: 0.9em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+
+.button-s
+	+Yanone
+	font-size: 0.75em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+
+
+// **mixin**
+
+@mixin H1()
+	+Hatter
+	font-size: 6em
+	font-weight: 400
+	line-height: 100%
+
+@mixin H2()
+	+Hatter
+	font-size: 4em
+	font-weight: 400
+	line-height: 120%
+
+@mixin H3()
+	+Hatter
+	font-size: 2.5em
+	font-weight: 400
+	line-height: 120%
+
+@mixin H4()
+	+Hatter
+	font-size: 2em
+	font-weight: 400
+	line-height: 120%
+
+@mixin H5()
+	+Hatter
+	font-size: 1.5em
+	font-weight: 400
+	line-height: 120%
+
+@mixin H6()
+	+Hatter
+	font-size: 1.25em
+	font-weight: 400
+	line-height: 120%
+	letter-spacing: 0.05em
+
+@mixin Body-l()
+	+Yanone
+	font-size: 1.25em
+	font-weight: 400
+	letter-spacing: 0.05em
+
+@mixin Body-m()
+	+Yanone
+	font-size: 1em
+	font-weight: 400
+
+@mixin Body-m_i()
+	+Amatic
+	font-size: 1em
+	font-style: normal
+	font-weight: 700
+
+@mixin Body-s()
+	+Yanone
+	font-size: 0.9em
+	font-weight: 400
+
+@mixin Body-s_i()
+	+Amatic
+	font-size: 0.9em
+	font-style: normal
+	font-weight: 700
+
+@mixin Subtitle()
+	+Hatter
+	font-size: 0.9em
+	font-weight: 400
+	line-height: 120%
+
+@mixin Caption()
+	+Comfortaa
+	font-size: 0.6em
+	font-weight: 400
+
+@mixin Overline()
+	+Comfortaa
+	font-size: 0.65em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+
+@mixin Button-l()
+	+Yanone
+	font-size: 1em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+
+@mixin Button-m()
+	+Yanone
+	font-size: 0.9em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+
+@mixin Button-s()
+	+Yanone
+	font-size: 0.75em
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase

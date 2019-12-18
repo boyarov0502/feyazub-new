@@ -1,0 +1,941 @@
+// **logo**
+
+.logo
+	position: relative
+	float: left
+	width: 7.875rem
+	height: 7rem
+	margin-top: 1rem
+	background-image: url('../images/logo-old.svg')
+	background-size: 7.875rem 7rem
+
+@media screen and ( max-width: 1296px )
+	.logo
+		display: none
+
+// **menu**
+
+.menu
+	position: absolute
+	top: 2rem
+	left: 0
+	right: 0
+	&-wrap
+		display: flex
+		align-items: flex-start
+		float: right
+	&-item
+		margin: 0 1.1rem
+		margin-top: 0.2rem
+		text-decoration: none
+		color: $white
+		transition: color 200ms
+		&:hover
+			color: $blue30
+		&:active
+			color: $blue05
+	&-phone
+		display: block
+		margin-bottom: 0.625rem
+		margin-left: 0.5rem
+		font-family: Arial
+		font-weight: 700
+		font-size: 1.125rem
+		text-decoration: none
+		color: #ffffff
+		&:hover
+			color: $blue30
+		&:active
+			color: $blue05
+	&-address
+		text-align: center
+		color: #ffffff
+		span
+			position: relative
+			top: -0.09rem
+
+@media screen and ( max-width: 1296px )
+	.menu
+		&-wrap
+			float: none
+			margin-right: 0
+			text-align: center
+		&-info
+			display: flex
+		&-phone
+			margin-bottom: 0
+		&-address
+			margin-left: 1.25rem
+
+@media screen and ( max-width: 695px )
+	.menu
+		&-wrap
+			flex-wrap: wrap
+			float: none
+			margin-right: 0
+			margin-left: -1rem
+			text-align: left
+		&-item
+			width: 50%
+			margin: 0
+		&-info
+			align-items: center
+			width: 100%
+			margin-top: 1rem
+			.menu-phone, .menu-address
+				width: 50%
+		&-phone
+			margin-left: 0
+		&-address
+			margin-left: 0
+			&-2
+				+Button-s
+		&-item, &-phone, &-address
+			text-align: center
+
+// **cosmetic**
+
+.cosmetic
+	background: $gradient-pink
+	position: relative
+	&:before
+		content: ''
+		display: block
+		width: 100%
+		height: 1rem
+		background: url('../images/rainbow.svg')
+		background-repeat: repeat-x
+		background-size: auto 1rem
+		position: absolute
+		top: 0
+		z-index: 2
+	&-bgimage
+		display: block
+		width: 55rem
+		height: 42.375rem
+		background-image: url('../images/cosmetic.png')
+		background-size: 55rem 42.375rem
+		position: absolute
+		left: -42rem
+		top: 8px
+		right: 0
+		margin: auto
+	&-box
+		padding-left: 9rem
+	&-title
+		+FlexAlign
+		min-height: 5rem
+		color: $blue30
+	&-subtitle
+		min-height: 3rem
+		color: $white
+	&-text
+		min-height: 3rem
+		padding-left: 1rem
+		margin-bottom: 3rem
+		color: $pink10
+	&-wrap
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-column-gap: 2rem
+		padding: 0
+		margin-bottom: 4rem
+	&-item
+		+FlexCenter
+		flex-direction: column
+		text-align: center
+	&-icon
+		font-size: 3rem
+		min-height: 3rem
+		margin-bottom: 1rem
+	&-name
+		display: block
+		min-height: 3rem
+		color: $white
+		p
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+	&-btnline
+		+FlexAlign
+	&-or
+		margin: 0 1.5rem 0 2rem
+		color: $pink30
+	&-next
+		+FlexAlign
+		color: $grey0
+	&-scroll
+		margin-right: 1rem
+		font-size: 3rem
+
+@media screen and ( max-width: 1296px )
+	.cosmetic
+		&-bgimage
+			display: none
+
+@media screen and ( max-width: 695px )
+	.cosmetic
+		br
+			display: none
+		&-box
+			padding-left: 0
+		&-subtitle
+			+H5
+		&-button
+			+Button-m
+		&-or
+			margin-left: 1.5rem
+			+Body-m
+		&-next
+			+Body-m
+
+// **service**
+
+.service
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-item
+		padding-left: 1rem
+		padding-right: 1rem
+	&-icon
+		margin-bottom: 2rem
+		.icon
+			font-size: 5rem
+	&-name
+		+FlexAlign
+		min-height: 3rem
+		margin-bottom: 1rem
+		color: $grey80
+	&-text
+		color: $grey50
+	&-link
+		float: right
+		margin-top: 1rem
+
+// **tshok**
+
+.tshok
+	background: $gradient-pink-reverse
+	position: relative
+	&-bgimage
+		display: block
+		width: 66.5625rem
+		height: 57.25rem
+		background-image: url('../images/tshok.png')
+		background-size: 66.5625rem 57.25rem
+		position: absolute
+		right: -57.5rem
+		top: 0
+		left: 0
+		margin: auto
+		z-index: 0
+	&-box
+		padding-left: 7rem
+	&-title
+		+FlexAlign
+		min-height: 5rem
+		color: $blue30
+	&-subtitle
+		min-height: 5rem
+		margin-bottom: 0.5rem
+		color: $white
+	&-text
+		min-height: 4rem
+		padding-left: 1rem
+		margin-bottom: 3rem
+		color: $pink10
+	&-wrap
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-column-gap: 2rem
+		padding: 0
+		margin-bottom: 4rem
+	&-item
+		+FlexCenter
+		flex-direction: column
+		text-align: center
+	&-icon
+		font-size: 5rem
+		min-height: 3rem
+		margin-bottom: 1.5rem
+	&-name
+		display: block
+		min-height: 3rem
+		color: $white
+		p
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+	&-btnline
+		+FlexAlign
+	&-or
+		margin: 0 1.5rem 0 2rem
+		color: $pink30
+	&-next
+		+FlexAlign
+		color: $grey0
+	&-scroll
+		margin-right: 1rem
+		font-size: 3rem
+
+@media screen and ( max-width: 1296px )
+	.tshok
+		&-bgimage
+			display: none
+
+@media screen and ( max-width: 695px )
+	.tshok
+		br
+			display: none
+		&-box
+			padding-left: 0
+		&-subtitle
+			+H5
+		&-button
+			+Button-m
+		&-or
+			margin-left: 1.5rem
+			+Body-m
+		&-next
+			+Body-m
+
+// **beauty**
+
+.beauty
+  &-topcontainer
+    position: relative
+    clear: both
+  &-link
+    float: right 
+    margin-top: -1.5rem
+
+.beauty
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-top: 2rem
+	&-item
+		position: relative
+		padding-left: 1rem
+		padding-right: 1rem
+		margin-top: 2rem
+		background: $white
+		box-shadow: $shadow-4dp_light
+		text-align: center
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 0.5rem
+			background: url('../images/rainbow.svg')
+			background-repeat: repeat-x
+			background-size: auto 0.5rem
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 1
+		&:hover
+			.beauty
+				&-name
+					color: $white
+				&-hover
+					opacity: 1
+					visibility: visible
+	&-name
+		+FlexCenter
+		min-height: 3rem
+		margin-top: 1rem
+		margin-bottom: 1rem
+		position: relative
+		z-index: 1
+		color: $blue60
+		transition: color 200ms
+	&-text
+		padding-left: 2rem
+		padding-right: 2rem
+		padding-bottom: 1rem
+		color: $grey70
+	&-hover
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: center
+		padding-bottom: 1.5rem
+		height: 100%
+		background: $gradient-blue
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+		opacity: 0
+		visibility: hidden
+		transition: opacity 200ms, visibility 200ms
+	&-price
+		margin-bottom: 0.75rem
+		+Roboto
+		font-size: 1.1rem
+		letter-spacing: 0.05rem
+		color: $white
+	&-
+	&-btnline
+		+FlexCenter
+		flex-wrap: wrap
+		margin-top: 3rem
+	&-button
+		margin-right: 2rem
+	&-comment
+		display: flex
+		align-items: flex-end
+		height: 1rem
+		padding-left: 3rem
+		margin-bottom: 0.7rem
+	&-phone
+		+FlexCenter
+		padding-left: 2rem
+		+Roboto
+		font-size: 2.25em
+		font-weight: 300
+		line-height: 1
+		text-decoration: none
+		color: $pink60
+		transition: color 200ms
+		&:hover
+			color: $pink80
+		&:active
+			color: $grey70
+
+@media screen and ( max-width: 1296px )
+  .beauty
+    &-link
+      float: none 
+      margin-top: 0
+
+@media screen and ( max-width: 695px )
+	.beauty
+		&-button
+			margin-right: 0
+		&-phonebox
+			+FlexAlign
+			flex-direction: column
+			margin-top: 2rem
+		&-comment, &-phone
+			padding-left: 0
+
+// **safety**
+
+.safety
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-top: 3rem
+	&-item
+		position: relative
+		margin-top: 2rem
+	&-image
+		width: 100%
+		height: 17.5rem
+		position: relative
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+	&-logo
+		width: 100%
+		height: 17rem
+		padding-top: 0.5rem
+		img
+			width: 16.25rem
+	&-i1, &-i2, &-i3
+		padding-top: 0.5rem
+		box-shadow: $shadow-4dp_light
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 0.5rem
+			background: url('../images/rainbow.svg')
+			background-repeat: repeat-x
+			background-size: auto 0.5rem
+			position: absolute
+			top: 0
+			left: 0
+	&-i1
+		.safety
+			&-image
+				background-image: url('../images/safety-1.jpg')
+	&-i2
+		.safety
+			&-image
+				background-image: url('../images/safety-2.jpg')
+	&-i3
+		.safety
+			&-image
+				background-image: url('../images/safety-3.jpg')
+	&-i4
+		background: $gradient-blue
+		box-shadow: $shadow-4dp_pink
+		text-align: center
+		.safety
+			&-name, &-text
+				color: $white
+			&-name
+				margin-top: 0
+			&-link
+				margin: 1rem auto 0
+	&-jar
+		padding-left: 1rem
+		padding-right: 1rem
+	&-name
+		min-height: 2rem
+		margin-top: 1.5rem
+		margin-bottom: 2rem
+		color: $pink60
+	&-text
+		padding-left: 1rem
+		padding-right: 1rem
+		color: $grey70
+
+// **queen**
+
+.queen
+	background: $gradient-blue
+	position: relative
+	&-bgimage
+		display: block
+		width: 37rem
+		height: 58.625rem
+		background-image: url('../images/queen.png')
+		background-size: 37rem 58.625rem
+		position: absolute
+		left: -52.5rem
+		right: 0
+		top: 0
+		margin: auto
+		z-index: 1
+	&-wrap
+		margin-right: 7rem
+		text-align: center
+	&-title, &-subtitle, &-price, &-bonus, &-link
+		color: $white
+	&-text, &-comment
+		color: $blue30
+	&-button, &-link
+		margin-left: auto
+		margin-right: auto
+	&-title
+		+FlexCenter
+		margin-bottom: 0.31rem
+	&-subtitle
+		+FlexCenter
+		margin-bottom: 2rem
+	&-price
+		+FlexCenter
+		min-height: 6rem
+		margin-bottom: 2rem
+		span
+			margin-right: 1.75rem
+			font-size: 6rem
+			color: $pink60
+	&-bonus
+		margin-bottom: 2rem
+	&-text
+		+FlexCenter
+		min-height: 4rem
+		margin-bottom: 0.875rem
+	&-comment
+		margin-bottom: 0.625rem
+	&-button
+		margin-bottom: 1.55rem
+
+@media screen and ( max-width: 1296px )
+	.queen
+		.container
+			padding-bottom: 30rem
+		&-bgimage
+			width: 21.40625rem
+			height: 33.90625rem
+			background-size: 21.40625rem 33.90625rem
+			position: absolute
+			left: 0
+			bottom: 0
+			top: auto
+		&-wrap
+			margin-right: 0
+
+@media screen and ( max-width: 695px )
+	.queen
+		br
+			display: none
+		.container
+			padding-bottom: 23.5rem
+		&-bgimage
+			width: 17.125rem
+			height: 27.125rem
+			background-size: 17.125rem 27.125rem
+		&-title
+			font-size: 3.5rem
+		&-subtitle
+			+Subtitle
+		&-price
+			+H6
+			min-height: 4rem
+			span
+				margin-right: 1.17rem
+				font-size: 4rem
+		&-bonus
+			+H6
+
+// **patient**
+
+.patient
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-item
+		padding-left: 1rem
+		padding-right: 1rem
+		margin-top: 3rem
+	&-head
+		display: flex
+		height: 6rem
+		padding-left: 1rem
+		padding-right: 1rem
+		border-bottom: 2px solid $grey50
+	&-icon
+		min-width: 4rem
+		margin-right: 1rem
+		font-size: 4rem
+	&-name
+		color: $grey70
+	&-jar
+		padding: 1rem
+	&-jartask
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		height: 16rem
+	&-text
+		min-height: 4rem
+		margin-bottom: 1rem
+		color: $grey50
+	&-task
+		min-height: 1rem
+		padding-left: 2rem
+		margin-bottom: 1rem
+		position: relative
+		color: $grey70
+	&-i1, &-i2, &-i3
+		.patient
+			&-name
+				span
+					color: $pink60
+			&-task
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					top: 4px
+					width: 0.75rem
+					height: 0.75rem
+					border-radius: 50%
+					background: $pink60
+	&-i4
+		.patient
+			&-name
+				span
+					color: $blue60
+			&-task
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					top: 4px
+					width: 0.75rem
+					height: 0.75rem
+					border-radius: 50%
+					background: $blue60
+
+@media screen and ( max-width: 695px )
+	.patient
+		&-jartask
+			height: auto
+
+// **info**
+
+.info
+	background: $grey0
+	position: relative
+	overflow: hidden
+	&:before
+		transform: rotateX(180deg)
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-item
+		margin-top: 3rem
+	&-name
+		+FlexAlign
+		margin-bottom: 1rem
+		color: $blue60
+	&-jar
+		padding-left: 1rem
+	&-text
+		margin-bottom: 1.5rem
+		color: $grey50
+	&-bgimage
+		display: block
+		width: 50.25rem
+		height: 91.75rem
+		background-image: url('../images/fairy.png')
+		background-size: 50.25rem 91.75rem
+		position: absolute
+		right: -53rem
+		top: 4.5rem
+		left: 0
+		margin: auto
+
+@media screen and ( max-width: 1296px )
+	.info
+		.container
+			padding-bottom: 30rem
+		&-bgimage
+			width: 21.40625rem
+			height: 39rem
+			background-size: 21.40625rem 39rem
+			right: 0
+			top: auto
+			bottom: -2.5rem
+
+@media screen and ( max-width: 695px )
+	.info
+		.container
+			padding-bottom: 23.5rem
+		&-bgimage
+			width: 17.125rem
+			height: 31.25rem
+			background-size: 17.125rem 31.25rem
+
+// **action**
+
+.action
+	background-image: url('../images/action.svg')
+	background-color: $pink60
+	background-size: 114.625rem 51.25rem
+	background-position: center
+	background-repeat: no-repeat
+	&:before
+		transform: rotateX(180deg)
+	&-wrap
+		text-align: center
+	&-subtitle
+		+FlexCenter
+		min-height: 3rem
+		color: #FFE187
+	&-title
+		+FlexCenter
+		min-height: 5rem
+		margin-bottom: 2rem
+		color: $white
+	&-description
+		margin-bottom: 3rem
+		color: $pink10
+	&-text
+		margin-bottom: 3rem
+		color: $white
+	&-link
+		margin-bottom: 2rem
+	&-link, &-button
+		margin-left: auto
+		margin-right: auto
+
+@media screen and ( max-width: 695px )
+	.action
+		&-subtitle
+			min-height: 2rem
+			+H5
+		&-title
+			min-height: 4rem
+			+H3
+		&-description
+			+H6
+		&-text
+			+H4
+
+// **review**
+
+.review
+	&-title
+		color: $blue60
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-top: 3rem
+	&-maps
+		padding-top: 1rem
+		padding-bottom: 1rem
+
+@media screen and ( max-width: 1296px )
+	.review
+		&-maps
+			margin-top: 3rem
+
+@media screen and ( min-width: 1297px )
+	.review
+		&-maps
+			width: 48rem
+
+// **slider_review**
+
+.slider
+	&_review
+		padding-top: 0
+		padding-bottom: 0
+		background: $gradient-blue
+		border-radius: 1rem
+		color: $white
+		&-item
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			height: 100%
+			padding: 1.6rem 3rem 2rem
+		&-title
+			margin-bottom: 0.75rem
+		&-name
+			margin-bottom: 2rem
+		&-rating
+			display: table
+			text-align: center
+			margin-bottom: 1.8rem
+			img
+				width: 11rem
+			span
+				display: block
+				margin-top: 0.5rem
+		&-text
+			padding-bottom: 2rem
+
+// **maps**
+
+.maps
+	text-align: center
+	&-title
+		margin-bottom: 3rem
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&-link
+		margin: auto
+	&-text
+		margin-top: 3rem
+		color: #6B7576
+	&-i1
+		.maps
+			&-image
+				width: 8.25rem
+	&-i2
+		.maps
+			&-image
+				width: 16rem
+	&-i3
+		.maps
+			&-image
+				width: 16rem
+
+@media screen and ( max-width: 1296px )
+	.maps
+		&-wrap
+			flex-wrap: wrap
+			justify-content: space-around
+
+@media screen and ( max-width: 695px )
+	.maps
+		&-wrap
+			margin-top: -2rem
+		&-item
+			width: 100%
+			margin-top: 2rem
+
+// **footer**
+
+.footer
+	background: $grey0
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+	&-map
+		&-wrap
+			display: flex
+			justify-content: space-between
+			margin-top: 1.6rem
+		&-image
+			width: 100%
+	&-contact
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			margin-top: -1rem
+		&-item
+			display: flex
+			width: 50%
+			margin-top: 1rem
+		&-icon
+			display: block
+			width: 1.625rem
+			height: 1.625rem
+			margin-right: 0.75rem
+			background: #1FB9D8
+			border-radius: 0.3rem
+		&-name
+			color: #1FB9D8
+		&-text
+			color: $grey70
+			text-decoration: none
+	&-logo
+		width: 22.125rem
+	&-license
+		display: table
+		margin: 0 auto
+		margin-top: 1.5rem
+		color: #1FB9D8
+		opacity: 1
+		transition: opacity 200ms
+		&:hover
+			opacity: 0.8
+	&-payment
+		margin-top: 3rem
+		text-align: center
+		&-text
+			margin-bottom: 1rem
+			color: $grey70
+		&-wrap
+			display: flex
+			justify-content: center
+		&-item
+			width: 4rem
+			margin: 0 1rem
+			border-radius: 0.3rem
+			box-shadow: 0px 0px 10px #1EB9D8
+
+@media screen and ( max-width: 1296px )
+	.footer
+		&-logo
+			display: none
+		&-contact
+			&-name, &-text
+				+Body-s
+
+@media screen and ( max-width: 695px )
+	.footer
+		&-contact
+			margin-top: 3rem
