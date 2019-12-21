@@ -19,6 +19,6 @@ module.exports = {
       'src/cosmetology/fonts/**/*',
       'node_modules/slick-carousel/slick/fonts/*'
     ],
-    favicon: 'src/cosmetology/favicon/**/*',
+    favicon: 'src/cosmetology/favicon/**/*'
   }
 }

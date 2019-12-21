@@ -1,0 +1,228 @@
+// **info**
+
+.info
+	background: $grey0
+	position: relative
+	overflow: hidden
+	&:before
+		transform: rotateX(180deg)
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-item
+		margin-top: 3rem
+	&-name
+		+FlexAlign
+		margin-bottom: 1rem
+		color: $blue60
+	&-jar
+		padding-left: 1rem
+	&-text
+		margin-bottom: 1.5rem
+		color: $grey50
+	&-bgimage
+		display: block
+		width: 50.25rem
+		height: 91.75rem
+		background-image: url('/images/fairy.png')
+		background-size: 50.25rem 91.75rem
+		position: absolute
+		right: -53rem
+		top: 4.5rem
+		left: 0
+		margin: auto
+
+@media screen and ( max-width: 1296px )
+	.info
+		.container
+			padding-bottom: 30rem
+		&-bgimage
+			width: 21.40625rem
+			height: 39rem
+			background-size: 21.40625rem 39rem
+			right: 0
+			top: auto
+			bottom: -2.5rem
+
+@media screen and ( max-width: 695px )
+	.info
+		.container
+			padding-bottom: 23.5rem
+		&-bgimage
+			width: 17.125rem
+			height: 31.25rem
+			background-size: 17.125rem 31.25rem
+
+// **review**
+
+.review
+	&-title
+		color: $blue60
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-top: 3rem
+	&-maps
+		padding-top: 1rem
+		padding-bottom: 1rem
+
+@media screen and ( max-width: 1296px )
+	.review
+		&-maps
+			margin-top: 3rem
+
+@media screen and ( min-width: 1297px )
+	.review
+		&-maps
+			width: 48rem
+
+// **slider_review**
+
+.slider
+	&_review
+		padding-top: 0
+		padding-bottom: 0
+		background: $gradient-blue
+		border-radius: 1rem
+		color: $white
+		&-item
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			height: 100%
+			padding: 1.6rem 3rem 2rem
+		&-title
+			margin-bottom: 0.75rem
+		&-name
+			margin-bottom: 2rem
+		&-rating
+			display: table
+			text-align: center
+			margin-bottom: 1.8rem
+			img
+				width: 11rem
+			span
+				display: block
+				margin-top: 0.5rem
+		&-text
+			padding-bottom: 2rem
+
+// **maps**
+
+.maps
+	text-align: center
+	&-title
+		margin-bottom: 3rem
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&-link
+		margin: auto
+	&-text
+		margin-top: 3rem
+		color: #6B7576
+	&-i1
+		.maps
+			&-image
+				width: 8.25rem
+	&-i2
+		.maps
+			&-image
+				width: 16rem
+	&-i3
+		.maps
+			&-image
+				width: 16rem
+
+@media screen and ( max-width: 1296px )
+	.maps
+		&-wrap
+			flex-wrap: wrap
+			justify-content: space-around
+
+@media screen and ( max-width: 695px )
+	.maps
+		&-wrap
+			margin-top: -2rem
+		&-item
+			width: 100%
+			margin-top: 2rem
+
+// **footer**
+
+.footer
+	background: $grey0
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+	&-map
+		&-wrap
+			display: flex
+			justify-content: space-between
+			margin-top: 1.6rem
+		&-image
+			width: 100%
+	&-contact
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			margin-top: -1rem
+		&-item
+			display: flex
+			width: 50%
+			margin-top: 1rem
+		&-icon
+			display: block
+			width: 1.625rem
+			height: 1.625rem
+			margin-right: 0.75rem
+			background: #1FB9D8
+			border-radius: 0.3rem
+		&-name
+			color: #1FB9D8
+		&-text
+			color: $grey70
+			text-decoration: none
+	&-logo
+		width: 22.125rem
+	&-license
+		display: table
+		margin: 0 auto
+		margin-top: 1.5rem
+		color: #1FB9D8
+		opacity: 1
+		transition: opacity 200ms
+		&:hover
+			opacity: 0.8
+	&-payment
+		margin-top: 3rem
+		text-align: center
+		&-text
+			margin-bottom: 1rem
+			color: $grey70
+		&-wrap
+			display: flex
+			justify-content: center
+		&-item
+			width: 4rem
+			margin: 0 1rem
+			border-radius: 0.3rem
+			box-shadow: 0px 0px 10px #1EB9D8
+
+@media screen and ( max-width: 1296px )
+	.footer
+		&-logo
+			display: none
+		&-contact
+			&-name, &-text
+				+Body-s
+
+@media screen and ( max-width: 695px )
+	.footer
+		&-contact
+			margin-top: 3rem

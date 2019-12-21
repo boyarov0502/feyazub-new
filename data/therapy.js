@@ -19,6 +19,6 @@ module.exports = {
       'src/therapy/fonts/**/*',
       'node_modules/slick-carousel/slick/fonts/*'
     ],
-    favicon: 'src/therapy/favicon/**/*',
+    favicon: 'src/therapy/favicon/**/*'
   }
 }

@@ -1,0 +1,90 @@
+.main{
+  background: $blue60;
+}
+.main-container{
+  margin-right: 9rem;
+}
+.main-subtitle, .main-description, .main-curse, .main-name, .main-text, .main-price, .main-comment{
+  color: $white
+}
+.main-bgimage{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 70.3125rem;
+  height: 46.9375rem;
+  background-image: url('/images/banaction.png');
+  background-size: 70.3125rem 46.9375rem;
+}
+.main-subtitle{
+  @include FlexAlign;
+  min-height: 2rem;
+  color: $white;
+}
+.main-title{
+  @include FlexAlign;
+  min-height: 5rem;
+  margin-bottom: 1rem;
+  color: $yellow40
+}
+.main-curse{
+  margin-top: 2rem;
+  @include FlexAlign;
+  min-height: 2rem;
+}
+.main-wrap{
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main-box{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.main-icon{
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+.main-buttonline{
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.main-buttons{
+  display: flex;
+}
+.main-order{
+  margin: 0 2rem;
+}
+
+@media screen and ( max-width: 695px ){
+  .main-wrap{
+    flex-wrap: wrap;
+  }
+  .main-item{
+    margin-bottom: 2rem;
+  }
+  .main-item:last-child{
+    margin-bottom: 0;
+  }
+  .main-name{
+    @include Subtitle;
+  }
+  .main-buttonline{
+    flex-wrap: wrap;
+  }
+  .main-buttons{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .main-button{
+    @include Button-m
+  }
+  .main-order{
+    margin: 1rem 0;
+  }
+}

@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'osteopathy',
+  name: 'mainpage',
   src: {
-    html: 'src/osteopathy/index.html',
-    sass: 'src/osteopathy/sass/**/*.+(scss|sass)',
-    js: 'src/osteopathy/js/**/*.js',
+    html: 'src/mainpage/index.html',
+    sass: 'src/mainpage/sass/**/*.+(scss|sass)',
+    js: 'src/mainpage/js/**/*.js',
     libsCss: [
       'node_modules/slick-carousel/slick/slick.css',
       'node_modules/slick-carousel/slick/slick-theme_feyazub.css'
@@ -12,13 +12,13 @@ module.exports = {
       'node_modules/slick-carousel/slick/slick.js'
     ],
     images: [
-      'src/osteopathy/images/**/*',
+      'src/mainpage/images/**/*',
       'node_modules/slick-carousel/slick/ajax-loader.gif'
     ],
     fonts: [
-      'src/osteopathy/fonts/**/*',
+      'src/mainpage/fonts/**/*',
       'node_modules/slick-carousel/slick/fonts/*'
     ],
-    favicon: 'src/osteopathy/favicon/**/*'
+    favicon: 'src/mainpage/favicon/**/*'
   }
 }
