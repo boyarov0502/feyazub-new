@@ -6,6 +6,9 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     uglifycss = require('gulp-uglifycss'),
     imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
+    mozjpeg = require('imagemin-mozjpeg'),
+    svgo = require('imagemin-svgo'),
     cache = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync');
@@ -16,7 +19,7 @@ var cosmetology = require('./data/cosmetology'),
     osteopathy = require('./data/osteopathy'),
     mainpage = require('./data/mainpage');
 
-var $ = mainpage; // Active project
+var $ = osteopathy; // Active project
 
 
 gulp.task('html', function () {
@@ -60,7 +63,11 @@ gulp.task('libs-js', function () {
 
 gulp.task('images', function () {
   return gulp.src($.src.images)
-          .pipe(cache(imagemin({ verbose: true })))
+          .pipe(cache(imagemin([
+              mozjpeg(),
+              pngquant(),
+              svgo()
+            ], { verbose: true })))
           .pipe(gulp.dest('dist/' + $.name + '/images/'));
 });
 
