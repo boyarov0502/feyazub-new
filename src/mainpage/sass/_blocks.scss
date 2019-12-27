@@ -1,38 +1,132 @@
+html{
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+*,*::before,*::after{
+    -webkit-box-sizing:inherit;
+    box-sizing:inherit
+}
+
+html, body{
+  font-size: 16px;
+}
+
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 .main{
+  
   background: $blue60;
+  padding-top: 2rem;
+  overflow: hidden;
+  
 }
+.header{
+  position: relative;
+  background: linear-gradient(91.81deg, #43CDE9 0%, #0395B6 100%);
+}
+
+.header__logo{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2.5625rem;
+}
+
+.header__menu{
+  display: flex;   
+  align-items: center;
+  min-height: 1.0625rem;
+  ul{
+      display: flex;
+      margin-right: 20px;
+  }
+  li+li{
+      margin-left: 2rem;
+  }
+  a{
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Yanone Kaffeesatz';
+      font-size: 0.9rem;
+      line-height: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+
+  }
+  
+}
+
+
+
+
+.header__btn{
+  
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+
 .main-container{
-  margin-right: 9rem;
+  margin-right: 7rem;
+  
 }
-.main-subtitle, .main-description, .main-curse, .main-name, .main-text, .main-price, .main-comment{
+.main-subtitle, .main-curse, .main-name, .main-text, .main-price, .main-comment{
   color: $white
 }
+
+.main-description{
+  color: $blue10;
+  font-size: 0.9rem;
+}
+
+.container{
+  position: relative;
+}
+
 .main-bgimage{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 70.3125rem;
-  height: 46.9375rem;
-  background-image: url('/images/banaction.png');
-  background-size: 70.3125rem 46.9375rem;
+  position: absolute;  
+  left: 0;  
+  bottom: 0;
+  width: 41.75rem;
+  height: 41.375rem;
+  background-image: url(../images/header-img.png);
+  background-size: 41.75rem 41.375rem;
 }
 .main-subtitle{
   @include FlexAlign;
   min-height: 2rem;
-  color: $white;
+  color: $yellow40;
+  font-size: 0.9rem;
 }
 .main-title{
   @include FlexAlign;
   min-height: 5rem;
   margin-bottom: 1rem;
-  color: $yellow40
+  color: $white;
 }
+
+
+
+.icon-default-1{
+  color: $yellow40;
+}
+
 .main-curse{
-  margin-top: 2rem;
+  margin-top: 2.6875rem;
   @include FlexAlign;
   min-height: 2rem;
+  justify-content: center;
+  color: $yellow40;
 }
 .main-wrap{
   margin-top: 1rem;
@@ -48,7 +142,29 @@
 .main-icon{
   margin-right: 1rem;
   font-size: 3rem;
+  color: $yellow40;
 }
+
+.main-price{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Arial';  
+  p{
+    font-family: 'Comfortaa';    
+    color: $blue30;
+    margin-top: 1px;
+    font-size: 0.6rem;
+  }
+}
+
+.main-comment{
+  font-family: 'Arial';
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: $blue30;
+  font-size: 0.75rem;
+}
+
 .main-buttonline{
   margin-bottom: 2rem;
   display: flex;
@@ -61,7 +177,124 @@
   margin: 0 2rem;
 }
 
+
+// info block start
+.info{
+  background: #fff !important;
+}
+.info-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.info__image{
+  background-image: url('/images/info-img.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 34rem;
+  height: 62rem;
+  
+}
+.info__title{
+  min-height: 2.375rem;
+  color: $blue60;
+  font-weight: 400;
+  
+}
+
+.info__title-text{
+  min-height: 4rem;
+  padding-top: 1.4375rem;
+  padding-bottom: 3rem;
+  span{
+    color: $blue60;
+  }
+}
+.info__items{
+  max-width: 61rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info__item{
+ padding-bottom: 4.0625rem;
+}
+
+.info__item-img{
+  width: 96px;
+  height: 96px;
+  background-color: #c4c4c4;
+}
+
+.info__item-title{
+  color: #00A4C5;
+  padding-bottom: 0.6875rem;
+  padding-top: 1.25rem;
+}
+.info__item-text{
+  min-height: 6.9375rem;
+}
+
+.info-content__right{
+  margin-right: 7rem;
+  max-width: 61rem;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.info__item-link{
+  color: $blue60;
+  font-family: 'Yanone Kaffeesatz';
+  text-transform: uppercase;
+  min-height: 2rem;
+  border-bottom: 1px solid $blue60;
+  display: inline-block;
+  &::after{
+    content: "\e905";
+    color: #1eb9d8;
+    font-family: 'icons';
+    padding-left: 0.5206rem;
+    font-size: 1rem;
+  }
+}
+// info block end
+
+
+
+
+
+
+
+@media screen and ( max-width: 1296px ){
+  .main-bgimage{
+    display: none;
+  }
+  .header__menu{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
+
 @media screen and ( max-width: 695px ){
+  
+  .header__menu{
+    ul{
+      display: none;
+    }
+    
+  }
+  .header__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__logo{
+    padding-bottom: 2rem;
+    position: relative;
+    
+  }
   .main-wrap{
     flex-wrap: wrap;
   }
