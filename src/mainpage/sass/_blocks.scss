@@ -637,7 +637,139 @@ a{
 }
 //section PROMO end
 
+//section FEAR
 
+.fear{
+  padding: 8rem 0 12rem;
+  background: #F4FBFC;
+}
+.fear__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fear__text-title{
+  color: $pink60;
+  min-height: 3rem;
+  margin-bottom: 1rem;
+}
+.fear__text-description{
+  min-height: 4rem;
+  color: #6B7576;
+  margin-bottom: 2rem;
+}
+
+.fear__text-items{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.fear__text-item{
+  max-width: 21.8125rem;
+}
+
+.fear__text-item-title{
+  color: $blue60;
+  min-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.fear__text-item-desc{
+  min-height: 8rem;
+  color: #6B7576;
+  
+}
+
+.fear__btns{
+  display: flex;
+  .fear__btn-pink{
+    margin-right: 2rem;
+  }
+}
+
+.fear__btn-white.btn-light_b{
+  background: none;
+}
+
+//slider
+
+
+.slider-img{  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 832px;
+  height: 480px;
+  
+}
+
+.slick-list.draggable{
+  padding: 0px 0px;
+
+}
+.slick__fear{
+  max-width: 832px;
+  margin-left: 3rem;
+}
+.slider-nav.slick-initialized.slick-slider{
+  
+  .slick-list.draggable{
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    .slick-track{
+      margin: 2rem 0px 0px;     
+      .slick-slide{
+        max-width: 112px;
+        &+.slick-slide{
+          margin-left: 32px;
+        }
+        
+      }
+    }    
+  }  
+}
+.slider-img-nav{  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 112px;
+  height: 112px;  
+    &:hover{
+      background-blend-mode: multiply;
+      background: #E43193;
+      opacity: 0.5; 
+      position: absolute;    
+      border-radius: 1rem;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        background-image: url(/images/slider/Active.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+}
+
+.slick-slide.slider-img-nav{  
+    margin-left: .5rem;
+  }
+//slider end
+
+
+
+
+//section FEAR end
 
 @media screen and ( max-width: 1296px ){
   .main-bgimage{
