@@ -38,6 +38,8 @@
 .method {
   background: $white;
   &-number {
+    font-family: sans-serif;
+    font-weight: 700;
     color: $pink60;
   }
   &-number:after {
@@ -65,6 +67,12 @@
   }
   &-name {
     min-height: 4rem;
+  }
+  &-price {
+    font-family: sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $pink60;
   }
   &-btnline {
     margin-top: 4rem;

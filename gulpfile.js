@@ -19,7 +19,7 @@ var cosmetology = require('./data/cosmetology'),
     osteopathy = require('./data/osteopathy'),
     mainpage = require('./data/mainpage');
 
-var $ = osteopathy; // Active project
+var $ = mainpage; // Active project
 
 
 gulp.task('html', function () {
