@@ -22,15 +22,14 @@ $(document).ready(function () {
   $(".fear-img")
     .attr('rel', 'gallery')
     .fancybox({
-		
-		padding : 0,
-		helpers : {
-			overlay : {
-				css : {
-					'background' : 'rgba(58, 42, 45, 0.95)'
-				}
-			}
-		}
+      padding : 0,
+      helpers : {
+        overlay : {
+          css : {
+            'background' : 'rgba(58, 42, 45, 0.95)'
+          }
+        }
+      }
 	});
 	
 	
