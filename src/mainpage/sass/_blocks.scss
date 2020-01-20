@@ -721,10 +721,8 @@ a{
       background-position: center center;
       width: 112px;
       height: 112px;  
-      border-radius: 1rem;
-    
-      &:hover{
-        
+      border-radius: 1rem;    
+      &:hover{        
         background-blend-mode: multiply;
         background: #E43193;
         background-size: cover;
@@ -735,8 +733,7 @@ a{
         transition: all .3s;
         &::before{
           position: absolute;
-          content: '';
-                    
+          content: '';                    
           background-image: url(/images/slider/Active.png);
           background-repeat: no-repeat;
           background-size: cover;
@@ -747,21 +744,38 @@ a{
           left: 50%;
           transform: translate(-50%, -50%);
         }
-      }
-    
-    
+      }    
   }
 }
 
 
 
 
-//slider end
+//fancy end
 
 
 
 
 //section FEAR end
+
+
+
+//section Baby ost
+
+.baby__ost{
+  background: linear-gradient(94.09deg, #FB5B95 0%, #CC1F67 100%);
+}
+
+.slider__baby-img{
+  background-size: cover;
+  width: 1086px;
+  height: 799px;
+  float: left;
+
+}
+
+
+//section Baby ost end
 
 @media screen and ( max-width: 1296px ){
   .main-bgimage{

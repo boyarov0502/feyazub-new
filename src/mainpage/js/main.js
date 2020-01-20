@@ -8,6 +8,15 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+	$('.slider__baby').slick({
+		arrows: false,
+		dots: true
+	});
+
+	
+
+});
 
 
   $(".fear-img")
