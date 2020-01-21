@@ -828,7 +828,7 @@ a{
     max-height: 100px;
     
     li{
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       width: 16px;
       height: 16px;
       font-size: 0;
@@ -943,6 +943,100 @@ a{
   background-color: #F4FBFC;
 }
 //section information end
+
+
+//section instagram start
+
+.instagram{
+  padding: 8rem 0 12rem;
+}
+
+.instagram__inner{
+  display: flex;
+}
+
+.instagram__inner-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &+&{
+    margin-left: 4rem;
+  }
+}
+
+.instagram__item-img{
+  img{
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.instagram__item-desc__text{
+  min-height: 19rem;
+  span{
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.instagram__item-desc__text{
+  max-width: 22.9375rem;
+}
+
+
+.instagram__item-desc__link.info__item-link{
+  min-height: 1.4375rem;
+  width: 12.3125rem;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+
+.instagram__string{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 106rem;
+  height: 96px;
+  background: linear-gradient(79.73deg, #FEDA75 0%, #FA7E1E 14.06%, #D62976 48.44%, #962FBF 81.25%, #4F5BD5 96.35%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.string__logo{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  width: 16.125rem;
+  align-items: center;
+}
+.string__text-title{
+  color: $white;
+  min-height: 2rem;
+}
+.string__text-subtitle{
+  color: rgba(255, 253, 246, 0.6);
+  min-height: 2.0625rem;
+}
+.string__contacts{
+  display: flex;
+  align-items: center;
+  width: 31rem;
+  justify-content: space-around;
+}
+.contact__mail{
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;
+  color: $white;
+  font-weight: 700;
+}
+//section instagram end
+
+
+//review start
+.review{
+  background-color: #F4FBFC;
+}
 
 @media screen and ( max-width: 1296px ){
   .main-bgimage{
