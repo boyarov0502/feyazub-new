@@ -14,8 +14,7 @@ $(document).ready(function () {
     dots: true,
     vertical: true,
     verticalSwiping: true,
-    draggable: true,
-    swipe: true
+    
   
   });
 
