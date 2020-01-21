@@ -8,6 +8,19 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+	$('.slider__baby').slick({
+		arrows: false,
+    dots: true,
+    vertical: true,
+    verticalSwiping: true,
+    
+  
+  });
+
+	
+
+});
 
 
   $(".fear-img")

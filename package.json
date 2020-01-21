@@ -32,5 +32,8 @@
     "imagemin-svgo": "^7.0.0",
     "slick-carousel": "^1.8.1"
   },
-  "browserslist": "last 8 versions"
+  "browserslist": "last 8 versions",
+  "dependencies": {
+    "fancybox": "^3.0.1"
+  }
 }
