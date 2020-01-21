@@ -11,8 +11,13 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.slider__baby').slick({
 		arrows: false,
-		dots: true
-	});
+    dots: true,
+    vertical: true,
+    verticalSwiping: true,
+    draggable: true,
+    swipe: true
+  
+  });
 
 	
 

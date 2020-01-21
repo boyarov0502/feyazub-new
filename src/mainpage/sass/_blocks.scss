@@ -730,6 +730,7 @@ a{
         border-radius: 1rem;
         position: relative;
         transition: all .3s;
+        box-shadow: 0px 0px 20px #1EB9D8;
         &::before{
           position: absolute;
           content: '';                    
@@ -761,6 +762,11 @@ a{
 
 //section Baby ost
 
+.slider__baby-box{
+  display: flex;
+   
+}
+
 .baby__ost{
   background: linear-gradient(94.09deg, #FB5B95 0%, #CC1F67 100%);
 }
@@ -771,6 +777,77 @@ a{
   height: 799px;
   float: left;
 
+}
+
+.slider__baby-icons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5.4375rem;
+  align-items: center;
+}
+
+
+.slider__baby-text {
+  color: $white;
+  margin-top: 8rem;
+  margin-left: 11.125rem;
+}
+
+.slider__baby-title {
+  min-height: 3rem;
+}
+.slider__baby-desc {
+  min-height: 5.625rem;
+  color: $pink10;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+
+.slider__baby-icon {
+  font-size: 12.5px;
+  text-align: center;
+  min-height: 3rem;
+  img{
+    margin: 0 auto;
+  }
+}
+
+.slider__baby.slick-slider{
+  position: relative;  
+  .slick-dots{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8rem;
+    left: 7rem;
+    
+    li{
+      margin-bottom: 1rem;
+      width: 16px;
+      height: 16px;
+      font-size: 0;
+      button{
+        display: none;
+      }
+    }
+    li::before{
+      content: url(/images/slider/elipse-slider.png);
+      
+    }
+    li.slick-active::before{
+      content: url(/images/slider/Ellipse-big.png);
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      
+    }
+  }
+  
+  
 }
 
 
