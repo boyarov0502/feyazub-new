@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('../fonts/icons/icons.eot?8yvlih');
-  src:  url('../fonts/icons/icons.eot?8yvlih#iefix') format('embedded-opentype'),
-    url('../fonts/icons/icons.ttf?8yvlih') format('truetype'),
-    url('../fonts/icons/icons.woff?8yvlih') format('woff'),
-    url('../fonts/icons/icons.svg?8yvlih#icons') format('svg');
+  src:  url('../fonts/icons/icons.eot?ftlaa4');
+  src:  url('../fonts/icons/icons.eot?ftlaa4#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icons.ttf?ftlaa4') format('truetype'),
+    url('../fonts/icons/icons.woff?ftlaa4') format('woff'),
+    url('../fonts/icons/icons.svg?ftlaa4#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,55 +25,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-default-1:before {
+.icon-cloud:before {
   content: "\e900";
-  color: #fff;
+  color: #f4fbfc;
 }
-.icon-default-2:before {
+.icon-default-1:before {
   content: "\e901";
   color: #fff;
 }
-.icon-default-3:before {
+.icon-default-2:before {
   content: "\e902";
   color: #fff;
 }
-.icon-default-4:before {
+.icon-default-3:before {
   content: "\e903";
   color: #fff;
 }
-.icon-default-5:before {
+.icon-info-1:before {
   content: "\e904";
-  color: #fff;
+  color: #e4337d;
 }
 .icon-linkto:before {
   content: "\e905";
   color: #1eb9d8;
 }
-.icon-scroll:before {
+.icon-logo:before {
   content: "\e906";
-  color: #f4fbfc;
+  color: #fff;
 }
-.icon-technique-1:before {
+.icon-main-1:before {
   content: "\e907";
-  color: #e4337d;
+  color: #ffcf70;
 }
-.icon-technique-2:before {
+.icon-main-2:before {
   content: "\e908";
-  color: #e4337d;
+  color: #ffcf70;
 }
-.icon-technique-3:before {
+.icon-main-3:before {
   content: "\e909";
-  color: #e4337d;
+  color: #ffcf70;
 }
-.icon-technique-4:before {
+.icon-menu:before {
   content: "\e90a";
-  color: #e4337d;
-}
-.icon-thumbs-down:before {
-  content: "\e90b";
-  color: #f44336;
-}
-.icon-thumbs-up:before {
-  content: "\e90c";
-  color: #43a047;
+  color: #fff;
 }
