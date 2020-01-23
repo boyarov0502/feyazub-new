@@ -4,55 +4,39 @@
 	background: $grey0
 	position: relative
 	overflow: hidden
-	&:before
-		transform: rotateX(180deg)
-	&-wrap
-		display: flex
-		flex-wrap: wrap
-		justify-content: space-between
-	&-item
-		margin-top: 3rem
-	&-name
-		+FlexAlign
-		margin-bottom: 1rem
-		color: $blue60
-	&-jar
-		padding-left: 1rem
-	&-text
-		margin-bottom: 1.5rem
-		color: $grey50
-	&-bgimage
-		display: block
-		width: 50.25rem
-		height: 91.75rem
-		background-image: url('/images/fairy.png')
-		background-size: 50.25rem 91.75rem
-		position: absolute
-		right: -53rem
-		top: 4.5rem
-		left: 0
-		margin: auto
 
 @media screen and ( max-width: 1296px )
 	.info
 		.container
 			padding-bottom: 30rem
-		&-bgimage
-			width: 21.40625rem
-			height: 39rem
-			background-size: 21.40625rem 39rem
-			right: 0
-			top: auto
-			bottom: -2.5rem
+		&__image
+      width: 36.25rem
+      height: 66.125rem
+      background-size: 36.25rem 66.125rem
+
+@media screen and ( max-width: 1296px )
+	.info
+    &__image
+      background-image: url('/images/fairy.png')
+      position: absolute
+      right: 0
+      left: 0
+      top: auto
+      bottom: -34.5rem
+      margin: auto
 
 @media screen and ( max-width: 695px )
 	.info
 		.container
-			padding-bottom: 23.5rem
-		&-bgimage
+			padding-bottom: 28.5rem
+		&__image
 			width: 17.125rem
 			height: 31.25rem
 			background-size: 17.125rem 31.25rem
+
+	.info
+		&__image
+      bottom: -0.5rem
 
 // **review**
 
@@ -154,7 +138,7 @@
 // **footer**
 
 .footer
-	background: $grey0
+	background: $white
 	&-wrap
 		display: flex
 		flex-wrap: wrap
