@@ -136,7 +136,7 @@ a{
   color: $yellow40;
 }
 .main-icon.icon-main-3 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .main-price{
@@ -255,7 +255,6 @@ a{
 //services start
 .services{
   background-color: #F4FBFC;
-  padding: 8rem 0;
   width: 100%;
 }
 
@@ -779,21 +778,25 @@ a{
 
 //section Baby ost
 
-.slider__baby-box{
-  display: flex;
-   
-}
-
 .baby__ost{
   background: linear-gradient(94.09deg, #FB5B95 0%, #CC1F67 100%);
+  position: relative;
+}
+
+.slider__baby .slick-slide {
+  position: relative;
 }
 
 .slider__baby-img{
-  background-size: cover;
-  width: 1086px;
-  height: 799px;
-  float: left;
-
+  position: absolute;
+  left: -0.1rem;
+  bottom: 0;
+}
+.slider__baby-item-1 .slider__baby-img > img {
+  width: 67.875rem;
+}
+.slider__baby-item-2 .slider__baby-img > img {
+  width: 67.875rem;
 }
 
 .slider__baby-icons{
@@ -806,8 +809,7 @@ a{
 
 .slider__baby-text {
   color: $white;
-  margin-top: 8rem;
-  margin-left: 11.125rem;
+  padding-left: 16rem;
 }
 
 .slider__baby-title {
@@ -833,7 +835,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12.5px;
+  font-size: 0.7813rem;
   text-align: center;
   min-height: 3rem;
   margin-top: 1rem;
@@ -847,6 +849,8 @@ a{
   position: relative;    
   .slick-dots{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     position: absolute;
     top: 8rem;
@@ -855,27 +859,27 @@ a{
     max-height: 100px;
     
     li{
-      margin-bottom: 2rem;
-      width: 16px;
-      height: 16px;
-      font-size: 0;
+      width: auto;
+      height: auto;
+      margin-bottom: 1rem;
       button{
         display: none;
       }
     }
     li::before{
-      content: url(/images/slider/elipse-slider.png);
-      
+      content: '';
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: $white;
+      opacity: 0.5;
+      transition: opacity 200ms;
     }
     li.slick-active::before{
-      content: url(/images/slider/Ellipse-big.png);
-      height: 32px;
-      width: 32px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      
+      height: 2rem;
+      width: 2rem;
+      opacity: 0.8;
     }
   }
   
@@ -891,7 +895,6 @@ a{
 
 .information{
   background-color: #F4FBFC;
-  padding: 8rem 0 14.375rem;
 }
 .inform__title-box{
   display: flex;
@@ -969,10 +972,6 @@ a{
 
 //section instagram start
 
-.instagram{
-  padding: 8rem 0 12rem;
-}
-
 .instagram__inner{
   display: flex;
   justify-content: space-between;
@@ -984,11 +983,14 @@ a{
   justify-content: space-between;
   align-items: center;
 }
+.instagram__inner-item:first-child {
+  margin-bottom: 2rem;
+}
 
 .instagram__item-img{
   img{
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
   }
 }
 
@@ -1005,31 +1007,31 @@ a{
   max-width: 22.9375rem;
 }
 
-
-.instagram__item-desc__link.info__item-link{
-  min-height: 1.4375rem;
-  width: 12.3125rem;
-  text-align: center;
-  letter-spacing: 1.6px;
-}
-
-
 .instagram__string{
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 106rem;
-  height: 96px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 0;
   background: linear-gradient(79.73deg, #FEDA75 0%, #FA7E1E 14.06%, #D62976 48.44%, #962FBF 81.25%, #4F5BD5 96.35%);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .string__logo{
   display: flex;
   justify-content: space-between;
-  margin-left: 2rem;
-  width: 16.125rem;
   align-items: center;
+  margin-left: 2rem;
+}
+.string__logo_1 {
+  width: 3.875rem;
+  height: 3.875rem;
+  margin-right: 1.125rem;
+}
+.string__logo_2 {
+  height: 3.5625rem;
+  margin-top: 0.5rem;
 }
 .string__text-title{
   color: $white;
@@ -1037,19 +1039,19 @@ a{
 }
 .string__text-subtitle{
   color: rgba(255, 253, 246, 0.6);
-  min-height: 2.0625rem;
 }
 .string__contacts{
   display: flex;
   align-items: center;
-  width: 31rem;
   justify-content: space-around;
+  padding-right: 1.5rem;
 }
 .contact__mail{
   font-family: 'Arial', sans-serif;
   font-size: 2rem;
   color: $white;
   font-weight: 700;
+  margin-right: 3rem;
 }
 //section instagram end
 
@@ -1062,7 +1064,6 @@ a{
 
 //form footer
 .form__footer{
-  padding: 8.5rem 0 12rem;
   background: #F4FBFC;
 }
 // .form__box{
@@ -1253,6 +1254,51 @@ a{
     margin-top: 4rem;
     margin-left: 0;
   }
+
+
+  .slider__baby-item .container {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+  .slider__baby.slick-slider .slick-dots {
+    top: 50%;
+  }
+  .slider__baby-box {
+    display: flex;
+    justify-content: center;
+  }
+  .slider__baby-text {
+    display: table;
+    padding-left: 0;
+  }
+  .slider__baby-img {
+    position: relative;
+    bottom: auto;
+    top: 0;
+  }
+  .slider__baby-item-1 .slider__baby-img > img {
+    width: 58.875rem;
+    margin-top: 2.5rem;
+  }
+  .slider__baby-item-2 .slider__baby-img > img {
+    width: 58.875rem;
+    margin-top: 2.5rem;
+  }
+
+  .instagram__string {
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.25rem;
+  }
+  .string__logo {
+    margin-left: 0;
+  }
+  .string__text {
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
 }
 
 
@@ -1387,5 +1433,57 @@ a{
     }
   }
 
+  .slider__baby-item .container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  .slider__baby.slick-slider .slick-dots {
+    left: auto;
+    right: 1rem;
+  }
+  .slider__baby-item-1 .slider__baby-img > img {
+    width: 31.875rem;
+  }
+  .slider__baby-item-2 .slider__baby-img > img {
+    width: 31.875rem;
+  }
+
+  .inform__title-head,
+  .inform__title-text {
+    margin-bottom: 1rem;
+  }
+
+  .instagram__inner-item {
+    flex-wrap: wrap;
+  }
+  .instagram__inner-item:first-child {
+    margin-bottom: 2.5rem;
+  }
+  .instagram__item-img {
+    margin-bottom: 1rem;
+  }
+  .string__text {
+    margin-top: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+  .instagram__item-desc__text {
+    min-height: auto;
+    margin-bottom: 1rem;
+  }
+  .instagram__string {
+    padding-top: 2rem;
+    padding-bottom: 2.25rem;
+  }
+  .string__text-title {
+    margin-bottom: 0.5rem;
+  }
+  .string__contacts {
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+  .contact__mail {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
 }
 
