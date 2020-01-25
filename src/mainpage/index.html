@@ -15,7 +15,7 @@
 	<meta name="msapplication-TileColor" content="#e4337d">
 	<meta name="theme-color" content="#ffffff">
 	<title>Зубная фея. Главная</title>
-	<link rel="stylesheet" href="/css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css?family=Comfortaa:700|Play&display=swap&subset=cyrillic">
 </head>
@@ -888,19 +888,19 @@
   					значительной степени обуславливает создание соответствующий условий активизации.</div>
   			</div>
   			<div class="form__footer-box">
-  				<form>
+  				<form id="feedback">
   					<div class="form__box box-50_l">
   						<div class="form__name fl-6">
   							<span>Как мы можем к вам обращаться?</span>
-  							<input type="text">
+  							<input type="text" name="name">
   						</div>
   						<div class="form__email fl-6">
   							<span>Ваш номер телефона или e-mail:</span>
-  							<input type="text">
+  							<input type="text" name="contact">
   						</div>
   						<div class="form__que fl-6">
   							<span>Вопрос в какой теме вас интересует?</span>
-  							<select>
+  							<select name="theme">
   								<option>Лечение у стоматолога</option>
   								<option>Лечение у стоматолога</option>
   								<option>Лечение у стоматолога</option>
@@ -909,8 +909,8 @@
   					</div>
   					<div class="box-50_r">
   					  <div class="form__textarea fl-6">
-    						<span>Ваш номер телефона или e-mail:</span>
-    						<textarea></textarea>
+    						<span>Ваще сообщение:</span>
+    						<textarea name="message"></textarea>
               </div>
     					<div class="form__textarea-bottom fl-6">
     						<div class="form__textarea-bottom__text">Таким образом дальнейшее развитие различных форм с
@@ -930,6 +930,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<script src="/js/libs.min.js"></script>
 	<script src="/js/main.js"></script>
+  <script src="/js/mail.js"></script>
 </body>
 
 </html>

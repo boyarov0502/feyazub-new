@@ -28,6 +28,11 @@ gulp.task('html', function () {
           .pipe(browserSync.reload( {stream: true} ));
 });
 
+gulp.task('php', function () {
+  return gulp.src($.src.php)
+          .pipe(gulp.dest('dist/' + $.name));
+});
+
 gulp.task('sass', function () {
   return gulp.src($.src.sass)
           .pipe(sass({ outputStyle: 'compressed' }))
@@ -81,6 +86,11 @@ gulp.task('favicon', function () {
           .pipe(gulp.dest('dist/' + $.name + '/favicon/'))
 });
 
+gulp.task('phpmailer', function () {
+  return gulp.src('phpmailer/**/*')
+          .pipe(gulp.dest('dist/' + $.name + '/phpmailer/'));
+});
+
 gulp.task('watch', function () {
   gulp.watch($.src.html, gulp.parallel('html'));
   gulp.watch($.src.sass, gulp.parallel('sass'));
@@ -103,4 +113,4 @@ gulp.task('clear', function() {
 
 gulp.task('server', gulp.parallel('watch', 'browser-sync'));
 
-gulp.task('default', gulp.series('html', 'sass', 'js', 'libs-css', 'libs-js', 'images', 'fonts', 'favicon', 'server'));
+gulp.task('default', gulp.series('html', 'php', 'sass', 'js', 'libs-css', 'libs-js', 'images', 'fonts', 'favicon', 'phpmailer', 'server'));
